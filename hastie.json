@@ -1,0 +1,9 @@
+{
+    "SourceDir": "_posts",
+    "LayoutDir": "_layouts",
+    "PublishDir": "./",
+    "ProcessFilters": {
+      "less": ["/usr/local/bin/lessc", "css"]
+    },
+    "BaseUrl": "https://ozychhi.github.io"
+}

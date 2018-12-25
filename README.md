@@ -1,1 +1,0 @@
-# ozychhi.github.io

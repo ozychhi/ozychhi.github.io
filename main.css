@@ -1,0 +1,261 @@
+@charset "utf-8";
+/**
+ * Reset some basic elements
+ */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure {
+  margin: 0;
+  padding: 0;
+}
+/**
+ * Basic styling
+ */
+body {
+  font: 400 10 "Lucida Console", Monaco, monospace;
+  color: #111;
+  background-color: #fdfdfd;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure,
+.vertical-rhythm {
+  margin-bottom: 15px;
+}
+/**
+ * Images
+ */
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+/**
+ * Figures
+ */
+figure > img {
+  display: block;
+}
+figcaption {
+  font-size: 14px;
+}
+/**
+ * Lists
+ */
+ul,
+ol {
+  margin-left: 30px;
+}
+li > ul,
+li > ol {
+  margin-bottom: 0;
+}
+/**
+ * Headings
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+/**
+ * Links
+ */
+a {
+  color: #2a7ae2;
+  text-decoration: none;
+}
+a:visited {
+  color: #2a7ae2;
+}
+a:hover {
+  color: #2a7ae2;
+  text-decoration: underline;
+}
+/**
+ * Blockquotes
+ */
+blockquote {
+  color: #828282;
+  border-left: 4px solid #e8e8e8;
+  padding-left: 15px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-style: italic;
+}
+blockquote > :last-child {
+  margin-bottom: 0;
+}
+/**
+ * Code formatting
+ */
+pre,
+code {
+  font-size: 15px;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  background-color: #eef;
+}
+code {
+  padding: 1px 5px;
+}
+pre {
+  padding: 8px 12px;
+  overflow-x: auto;
+}
+pre > code {
+  border: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+/**
+ * Wrapper
+ */
+.wrapper,
+.header-wrapper,
+.footer-wrapper {
+  max-width: -webkit-calc(740px);
+  max-width: calc(800px - (30px * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+/**
+ * Clearfix
+ */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/**
+ * Icons
+ */
+.icon > svg {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  position: relative;
+  bottom: 2px;
+}
+.icon > svg path {
+  fill: #828282;
+}
+.inline-display {
+  display: inline-block;
+}
+._italic {
+  font-style: italic;
+}
+.header-main {
+  margin: 0;
+}
+/**
+ * Page content
+ */
+.page-content {
+  padding: 30px 0;
+}
+.page-heading {
+  font-size: 20px;
+  margin-top: 30px;
+}
+.post-list {
+  margin-left: 30px;
+  list-style: none;
+}
+@include media-query(600px) {
+  margin-left: 15px;
+}
+.post-list > li {
+  margin-bottom: 7.5px;
+}
+@include media-query(600px) {
+  margin-bottom: 15px;
+}
+.post-list > li .post-meta {
+  font-size: 14px;
+}
+.post-list > li .post-break {
+  display: none;
+}
+@include media-query(600px) {
+  display: inline;
+}
+.post-list > li .post-link {
+  display: inline-block;
+}
+@include media-query(600px) {
+  margin-left: 15px;
+}
+/**
+ * Posts
+ */
+.post-header {
+  margin-bottom: 30px;
+}
+.post-title {
+  font-size: 30px;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+@include media-query(800px) {
+  font-size: 20px;
+}
+.post-content {
+  margin-bottom: 30px;
+}
+.post-content h2 {
+  font-size: 32px;
+}
+@include media-query(800px) {
+  font-size: 28px;
+}
+.post-content h3 {
+  font-size: 26px;
+}
+@include media-query(800px) {
+  font-size: 22px;
+}
+.post-content h4 {
+  font-size: 20px;
+}
+@include media-query(800px) {
+  font-size: 18px;
+}

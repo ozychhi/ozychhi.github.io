@@ -1,0 +1,12 @@
+{{ template "main_header.html" . }}
+
+{{ .Content }}
+
+<p>Recent Posts</p>
+<ul>
+  {{ range .Recent }}
+    <li><a href="{{ .Params.BaseUrl }}/{{ .Url }}">{{ .Title }}</a></li>
+  {{ end }}
+</ul>
+
+{{ template "footer.html" }}
